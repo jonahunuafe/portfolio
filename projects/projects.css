@@ -1,0 +1,79 @@
+
+.header {
+    min-height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(../images/unsplash4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: -5rem;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.container a {
+    text-decoration: none;
+    line-height: 1.5;
+    background-color: goldenrod;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    color: #0C356A;
+    padding: 2rem;
+    transform: translateX(-2.3%);
+    transition: 1s;
+}
+
+.container a:hover {
+    background-color: gold;
+}
+
+
+
+#span {
+    text-align: center;
+    position: relative;
+    top: 6rem;
+    cursor: pointer;
+    background: #7743DB;
+    width: 15%;
+    margin: auto;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .container a {
+        margin-left: 0;
+        line-height: 1.5;
+        padding: 1rem;
+        transform: translateX(0);
+    }
+
+    #span {
+        display: none;
+    }
+}

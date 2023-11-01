@@ -1,0 +1,94 @@
+
+.header {
+    background: black;
+    min-height: 20vh;
+}
+
+.contact {
+    background: linear-gradient(rgba(255, 2, 255, 1), rgba(18, 52, 86, 1));
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.contact h1 {
+    padding-top: 7rem;
+}
+
+.contact h1::after {
+    content: "";
+    width: 8%;
+    height: 1.5px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-top: 30px;
+}
+
+.num {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    line-height: 2;
+}
+
+#phone {
+    padding-left: 4.5rem;
+}
+
+.container {
+    font-size: 1.3rem;
+    width: 50%;
+}
+
+.container h2 {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+input[type='text'], .btn {
+    padding: 1rem;
+}
+
+input[type='text']:focus {
+    background: #808080;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+
+
+@media(max-width: 700px) {
+    .header {
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/unsplash4.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .contact {
+        background: goldenrod;
+    }
+
+    .contact h1::after {
+        width: 40%;
+    }
+
+    .container {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .container h2 {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+}

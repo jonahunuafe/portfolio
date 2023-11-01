@@ -1,0 +1,94 @@
+body {
+    background: black;
+}
+
+.header {
+    min-height: 20vh;
+    background: linear-gradient( rgba(18, 52, 86, 1), rgba(255, 2, 255, 1));
+}
+
+.welcome {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 7rem;
+  
+}
+
+h1 {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    transition: all 0.25s;
+    font-size: 3em;
+}
+
+h1:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.about {
+    color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+.about-text {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.about-text img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+
+.footer {
+    background: #fff;
+    color: black;
+}
+
+.icons .fa {
+    color: rgba(255, 2, 255, 1);
+}
+
+.about-text p {
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
+
+@media(max-width: 700px) {
+    .welcome {
+        width: 90%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about-text {
+        flex-direction: column;
+    }
+
+    .about-text img {
+        margin: auto;
+    }
+
+    .about-text p {
+        margin-top: 2rem;
+        width: 85%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
