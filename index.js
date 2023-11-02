@@ -1,12 +1,17 @@
+const hamburgerIcon = document.getElementById("hamburger");
+const closeIcon = document.getElementById("close");
 const navLinks = document.querySelector(".nav-links");
 
-function showMenu() {
+hamburgerIcon.addEventListener("click", () => {
     navLinks.style.display = "block";
-}
+});
 
-function hideMenu() {
+closeIcon.addEventListener("click", () => {
     navLinks.style.display = "none";
-}
+});
 
-document.querySelector(".fa-bars").addEventListener("click", showMenu);
-document.querySelector(".fa-times").addEventListener("click", hideMenu);
+document.body.addEventListener("click", (event) => {
+    if (event.target !== hamburgerIcon) {
+        navLinks.style.display = "none";
+    }
+});
